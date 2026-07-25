@@ -80,6 +80,10 @@ window.addEventListener("DOMContentLoaded", () => {
         await window.confirmationResult.confirm(code);
 
         alert("Login Successful!");
+        const historyBtn = document.getElementById("historyBtn");
+if (historyBtn) {
+    historyBtn.style.display = "block";
+}
 
         const statusCard =
           document.getElementById("statusCard");

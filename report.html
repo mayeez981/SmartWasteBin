@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Issue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="report-box">
+    <h2>⚠ Report an Issue</h2>
+
+    <form id="reportForm" autocomplete="off">
+        <label>Name</label><br>
+        <input
+    type="text"
+    id="name"
+    placeholder="Enter your name"
+    autocomplete="off">
+
+        <label>Issue Type</label><br>
+     <select id="issueType">
+    <option>Bin Damaged</option>
+    <option>Overflowing Bin</option>
+    <option>Sensor Not Working</option>
+    <option>Bad Smell</option>
+    <option>Other</option>
+</select>   
+
+        <label>Description</label><br>
+        
+<textarea id="description" rows="5" placeholder="Describe the issue"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+<script type="module" src="report.js"></script>
+
+</body>
+</html>

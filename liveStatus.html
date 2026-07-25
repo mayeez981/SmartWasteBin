@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Status - Smart Waste Bin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+<h2>
+    🗑️ Smart Waste Bin
+    <span class="version">v1.0</span>
+</h2>
+    </div>
+</header>
+
+<div class="container">
+
+<h1>
+    📊 Live Bin Status
+    <span id="statusBadge">LIVE</span>
+</h1>
+
+<!-- PASTE HERE -->
+
+<div class="summary">
+    <div class="card">
+        <h3>95%</h3>
+        <p>Fill Level</p>
+    </div>
+
+    <div class="card">
+        <h3>FULL</h3>
+        <p>Current Status</p>
+    </div>
+
+    <div class="card">
+        <h3>ONLINE</h3>
+        <p>Device</p>
+    </div>
+</div>
+
+<!-- THEN THIS STARTS -->
+<div class="instruction-box">
+
+      <h3>🗑️ Bin Fill Level</h3>  
+        <p id="fillLevel">Loading...</p>
+        <div class="progress">
+    <div id="fillLevelBar" class="progress-bar">0%</div>
+</div>
+<p id="warningMessage"></p>
+
+       <h3>🟢 Lid Status</h3> 
+        <p id="lidStatus">Loading...</p>
+
+        <h3>🕒 Last Updated</h3>
+        <p id="lastUpdated">Loading...</p>
+
+        <button onclick="checkBin()">
+            🔄 Refresh Status
+        </button>
+
+        <br><br>
+
+        <button onclick="window.location.href='instructions.html'">
+            ← Back
+        </button>
+
+    </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

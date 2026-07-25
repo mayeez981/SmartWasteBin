@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Bin System</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="logo">
+        <h2>🗑 Smart Waste Bin</h2>
+    </div>
+
+</header>
+
+
+<div class="container">
+
+
+
+    <h1>🗑️ Smart Waste Bin System</h1>
+
+    <p class="subtitle">
+    </p>
+
+    <hr>
+
+    <!-- Login Section -->
+
+    <div id="loginBox">
+
+       <h2><i class="fa-solid fa-circle-user"></i> User Login</h2> 
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Enter Mobile Number">
+
+        <br><br>
+
+        <button id="sendOtp">
+            Send OTP
+        </button>
+
+        <br><br>
+
+        <input
+            type="text"
+            id="otp"
+            placeholder="Enter OTP">
+
+        <br><br>
+
+        <button id="verifyOtp">
+            Verify OTP
+        </button>
+
+        <br><br>
+
+        <div id="recaptcha-container"></div>
+
+    </div>
+
+    <hr>
+
+    <!-- Bin Status -->
+
+    <div class="status-card" id="statusCard" style="display:none;">
+
+        <h2>📊 Live Bin Status</h2>
+
+        <p><b>Bin ID :</b> BIN-001</p>
+
+        <p><b>Location :</b> College Campus</p>
+
+        <h1 id="result">
+            Checking...
+        </h1>
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <h3 id="percentage">
+            0%
+        </h3>
+
+      <p id="lastUpdated"></p>  
+
+        <button onclick="checkBin()">
+
+            🔄 Refresh Status
+
+        </button>
+
+    </div
+
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

@@ -173,6 +173,10 @@ if (binLevel >= 90) {
 
   // Make function available globally
   window.checkBin = checkBin;
+  const historyBtn = document.getElementById("historyBtn");
+if (historyBtn) {
+    historyBtn.style.display = "block";
+}
 
 }); // End DOMContentLoaded
 
